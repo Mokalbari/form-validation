@@ -213,11 +213,13 @@ legend {
       font-size: 1.2rem;
     }
 
-    input {
+    input,
+    select {
       padding: 0.25rem 0.5rem;
       font-size: 1.1rem;
       border: 1px solid grey;
       border-radius: 0.75rem;
+      background-color: white;
     }
   }
 

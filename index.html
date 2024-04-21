@@ -7,5 +7,44 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Basic form validation</legend>
+        <div class="form__container">
+          <div class="field">
+            <label for="user">Username:</label>
+            <input type="text" name="username" id="username" />
+            <span id="usernameValidation">&zwnj; </span>
+          </div>
+          <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+            <span id="emailValidation">&zwnj; </span>
+          </div>
+          <div class="field">
+            <label for="country">Country:</label>
+            <input type="text" name="country" id="country" />
+            <span id="countryValidation">&zwnj; </span>
+          </div>
+          <div class="field">
+            <label for="postal">Zip Code:</label>
+            <input type="text" name="postal" id="postal" />
+            <span id="postalError">&zwnj; </span>
+          </div>
+          <div class="field">
+            <label for="password">Password:</label>
+            <input type="text" name="password" id="password" />
+            <span id="passwordError">&zwnj; </span>
+          </div>
+          <div class="field">
+            <label for="passwordCheck">Confirm password:</label>
+            <input type="text" name="passwordCheck" id="passwordCheck" />
+            <span id="passwordCheckError">&zwnj; </span>
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
 </html>

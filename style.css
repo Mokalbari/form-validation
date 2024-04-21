@@ -181,3 +181,60 @@ textarea:not([rows]) {
 /* ---------- */
 /* ---END OF RESET-- */
 /* ---------- */
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+fieldset {
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+
+legend {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.form__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+  padding: 2rem;
+
+  .field {
+    display: grid;
+    gap: 0.5rem;
+
+    label {
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+
+    input {
+      padding: 0.25rem 0.5rem;
+      font-size: 1.1rem;
+      border: 1px solid grey;
+      border-radius: 0.75rem;
+    }
+  }
+
+  button {
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-family: serif;
+    font-size: 1.2rem;
+    background-color: grey;
+    color: white;
+    border-radius: 1rem;
+    grid-column: 1 / -1; /* This will make the button span all columns */
+    justify-self: center; /* This centers the button horizontally */
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

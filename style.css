@@ -207,6 +207,7 @@ legend {
   .field {
     display: grid;
     gap: 0.5rem;
+    margin-bottom: 1rem;
 
     label {
       font-weight: 500;
@@ -215,6 +216,7 @@ legend {
 
     input,
     select {
+      width: 45ch;
       padding: 0.25rem 0.5rem;
       font-size: 1.1rem;
       border: 1px solid grey;

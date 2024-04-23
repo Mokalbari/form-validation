@@ -8,33 +8,33 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <form action="#" method="post">
+    <form action="#" method="post" id="form">
       <fieldset>
         <legend>Basic form validation</legend>
         <div class="form__container">
           <div class="field">
             <label for="user">Username:</label>
-            <input type="text" name="username" id="username" minlength="4" maxlength="20"/>
-            <span id="usernameValidation">&zwnj; </span>
+            <input type="text" name="username" id="username" minlength="4" maxlength="20" required/>
+            <span id="usernameError">&zwnj; </span>
           </div>
           <div class="field">
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" require/>
-            <span id="emailValidation">&zwnj; </span>
+            <input type="email" name="email" id="email" required/>
+            <span id="emailError">&zwnj; </span>
           </div>
           <div class="field">
             <label for="country">Country:</label>
-            <select type="text" name="country" id="country" require/>
+            <select type="text" name="country" id="country" required/>
             <option value="fr">France</option>
             <option value="de">Germany</option>
             <option value="sp">Spain</option>
             <option value="en">England</option>
             </select>
-            <span id="countryValidation">&zwnj; </span>
+            <span id="countryError">&zwnj; </span>
           </div>
           <div class="field">
             <label for="postal">Zip Code:</label>
-            <input type="text" name="postal" id="postal" require/>
+            <input type="text" name="postal" id="postal" required/>
             <span id="postalError">&zwnj; </span>
           </div>
           <div class="field">
@@ -44,7 +44,7 @@
           </div>
           <div class="field">
             <label for="passwordCheck">Confirm password:</label>
-            <input type="password" name="passwordCheck" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" id="passwordCheck" />
+            <input type="password" name="passwordCheck" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" id="passwordCheck" required/>
             <span id="passwordCheckError">&zwnj; </span>
           </div>
           <button type="submit">Submit</button>
